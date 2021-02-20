@@ -1,0 +1,9 @@
+:root {
+    --level_1-border-color: red;
+    --level_2-border-color: yellowgreen;
+    --level_3-border-color: pink;
+    --level_4-border-color: blue;
+    --level_5-border-color: green;
+
+    --var-fz-level: 14px;
+}

@@ -1,0 +1,122 @@
+@import 'variables.css';
+@import 'format.css';
+
+@import 'infographic.css';
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+main {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.level:after,
+.level:before {
+    content: "";
+    position: absolute;
+
+}
+
+.hidden {
+    display: none !important;
+}
+.level:hover {
+    color: yellow;
+    border-color: yellow;
+}
+
+.level[data-level="0"] {
+    cursor: pointer;
+    padding: 20px;
+    width: 526px;
+    margin: 0 auto;
+    border: 3px solid white;
+    position: relative;
+}
+
+.level {
+    width: fit-content;
+    position: absolute;
+    display: block;
+    padding: 15px;
+    font-size: var(--var-fz-level);
+}
+
+.level > .container {
+    position: relative;
+}
+
+.level[data-level^="1"] {
+    border: 1px solid var(--level_1-border-color);
+}
+
+.level[data-level^="2"] {
+    border: 1px solid var(--level_2-border-color);
+}
+
+.level[data-level^="3"] {
+    border: 1px solid var(--level_3-border-color);
+}
+
+.level[data-level^="4"] {
+    border: 1px solid var(--level_4-border-color);
+}
+
+.level[data-level^="5"] {
+    border: 1px solid var(--level_5-border-color);
+}
+
+/* CLOSE BUTTON START*/
+.btn_global {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid white;
+}
+
+.btn_global:before {
+    content: "x";
+}
+
+.btn_global--open::before {
+    content: ">";
+}
+
+.btn_close {
+    position:absolute;
+    top: 0;
+    right: 0;
+    border:2px solid white;
+}
+
+.btn_close:before {
+    content: "x";
+}
+
+.btn_close--open:before {
+    content: '>';
+}
+/* CLOSE BUTTON */
+/* MOBILE START*/
+@media (max-width: 768px) {
+    .level {
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .level:after,
+    .level:before {
+        display: none;
+    }
+
+    .small-hidden {
+        display: none;
+    }
+}

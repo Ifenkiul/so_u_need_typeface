@@ -1,0 +1,28 @@
+.d-none {
+    display: none;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* FONT-SIZE START */
+.fz-30 {
+    font-size: 30px;
+}
+.fz-60 {
+    font-size: 60px;
+}
+/* FONT-SIZE */
+
+/* PADDINGS START */
+.p-20 {
+    padding: 20px;
+}
+/* PADDINGS */
+
+/* MARGINS START */
+.m-0 {
+    margin: 0;
+}
+/* MARGINS */
