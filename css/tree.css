@@ -1,5 +1,6 @@
 @import 'variables.css';
 @import 'format.css';
+@import '../fonts/fonts.css';
 
 @import 'infographic.css';
 
@@ -16,6 +17,15 @@ main {
     align-items: center;
 }
 
+.level a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.level a:active {
+    color: red;
+}
+
 .level:after,
 .level:before {
     content: "";
@@ -25,10 +35,6 @@ main {
 
 .hidden {
     display: none !important;
-}
-.level:hover {
-    color: yellow;
-    border-color: yellow;
 }
 
 .level[data-level="0"] {
@@ -92,7 +98,7 @@ main {
     position:absolute;
     top: 0;
     right: 0;
-    border:2px solid white;
+    
 }
 
 .btn_close:before {
@@ -101,6 +107,18 @@ main {
 
 .btn_close--open:before {
     content: '>';
+}
+
+.btn_close[data-level-1] {
+    border:2px solid var(--level_1-border-color);;
+}
+
+.btn_close[data-level-2] {
+    border:2px solid var(--level_2-border-color);;
+}
+
+.btn_close[data-level-3] {
+    border:2px solid var(--level_3-border-color);;
 }
 /* CLOSE BUTTON */
 /* MOBILE START*/

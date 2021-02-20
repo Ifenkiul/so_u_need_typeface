@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Univers Regular';
+    src: url('UniversRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+.ff-universe {
+    font-family: 'Univers Regular';
+}    
