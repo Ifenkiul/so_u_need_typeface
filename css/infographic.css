@@ -24,9 +24,9 @@
 .level.infographic[data-level="2"]:after {
     border-top: 1px dotted var(--level_2-border-color);
     border-right: 1px dotted var(--level_2-border-color);
-    height: 27px;
+    height: 17px;
     right: 95px;
-    bottom: -29px;
+    bottom: -19px;
     border-top-right-radius: 10px;
 
 }
@@ -39,9 +39,9 @@
 .level.infographic[data-level="3"][data-id="yes"]:after {
     border-top: 1px dotted var(--level_3-border-color);
     border-right: 1px dotted var(--level_3-border-color);
-    height: 27px;
+    height: 19px;
     right: 26px;
-    bottom: -29px;
+    bottom: -21px;
 
 }
 
@@ -53,9 +53,9 @@
 .level.infographic[data-level="3"][data-id="no"]:after {
     border-top: 1px dotted var(--level_3-border-color);
     border-right: 1px dotted var(--level_3-border-color);
-    height: 27px;
+    height: 20px;
     right: 26px;
-    bottom: -29px;
+    bottom: -21px;
 
 }
 /* LEVEL 4 */
@@ -86,6 +86,34 @@
     border-left: 1px dotted var(--level_4-border-color);
     width: 25px;
     left: -27px;
+    top: 26px;
+}
+
+
+/* LEVEL 5 */
+.level.infographic[data-level="5"][data-id="yes"] {
+    bottom: -88px;
+    right: 91px;
+}
+
+.level.infographic[data-level="5"][data-id="yes"]:before{
+    border-left: 1px dotted var(--level_5-border-color);
+    height: 23px;
+    left: 27px;
+    top: -25px;
+
+}
+
+.level.infographic[data-level="5"][data-id="no"] {
+    bottom: -88px;
+    right: 0px;
+}
+
+.level.infographic[data-level="5"][data-id="no"]:before{
+    border-left: 1px dotted var(--level_5-border-color);
+    height: 23px;
+    left: 27px;
+    top: -25px;
 
 }
 

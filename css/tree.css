@@ -19,7 +19,6 @@ main {
 
 .level a:hover {
     color: yellow;
-    text-decoration: underline;
 }
 
 .level a:active {
@@ -78,6 +77,10 @@ main {
     border: 1px solid var(--level_5-border-color);
 }
 
+.level[data-level^="6"] {
+    border: 1px solid var(--level_6-border-color);
+}
+
 /* CLOSE BUTTON START*/
 .btn_global {
     position: absolute;
@@ -98,7 +101,8 @@ main {
     position:absolute;
     top: 0;
     right: 0;
-    
+    border-bottom-left-radius: 10px;
+    padding: 0 3px 0 3px;
 }
 
 .btn_close:before {
@@ -109,16 +113,40 @@ main {
     content: '>';
 }
 
-.btn_close[data-level-1] {
-    border:2px solid var(--level_1-border-color);;
+.btn_close[data-level="1"] {
+    border-left:1px solid var(--level_1-border-color);
+    border-bottom: 1px solid var(--level_1-border-color);
+    
 }
 
-.btn_close[data-level-2] {
-    border:2px solid var(--level_2-border-color);;
+.btn_close[data-level="2"] {
+    border-left: 1px solid var(--level_2-border-color);
+    border-bottom: 1px solid var(--level_2-border-color);
 }
 
-.btn_close[data-level-3] {
-    border:2px solid var(--level_3-border-color);;
+.btn_close[data-level="3"] {
+    border-left: 1px solid var(--level_3-border-color);
+    border-bottom: 1px solid var(--level_3-border-color);
+}
+
+.btn_close[data-level="4"] {
+    border-left: 1px solid var(--level_4-border-color);
+    border-bottom: 1px solid var(--level_4-border-color);
+}
+
+.btn_close[data-level="5"] {
+    border-left: 1px solid var(--level_5-border-color);
+    border-bottom: 1px solid var(--level_5-border-color);
+}
+
+.btn_close[data-level="6"] {
+    border-left: 1px solid var(--level_6-border-color);
+    border-bottom: 1px solid var(--level_6-border-color);
+}
+
+.btn_close[data-level="7"] {
+    border-left: 1px solid var(--level_7-border-color);
+    border-bottom: 1px solid var(--level_7-border-color);
 }
 /* CLOSE BUTTON */
 /* MOBILE START*/

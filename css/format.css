@@ -6,14 +6,18 @@
     text-transform: uppercase;
 }
 
-/* FONT-SIZE START */
+/* FONT */
 .fz-30 {
     font-size: 30px;
 }
 .fz-60 {
     font-size: 60px;
 }
-/* FONT-SIZE */
+
+.fw-demi {
+    font-weight: bold;
+}
+/* FONT */
 
 /* PADDINGS START */
 .p-20 {
