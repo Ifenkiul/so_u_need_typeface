@@ -6,4 +6,26 @@
     }
 .ff-universe {
     font-family: 'Univers Regular';
-}    
+} 
+
+@font-face {
+    font-family: 'Letters Gothic';
+    src: url('LetterGothicStd.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.ff-letters-gothic {
+    font-family: 'Letters Gothic';
+}
+
+@font-face {
+    font-family: 'OCR Std';
+    src: url('OCRAStd.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.ff-ocr-std {
+    font-family: 'OCR Std';
+}

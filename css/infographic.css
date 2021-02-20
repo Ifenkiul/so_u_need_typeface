@@ -7,8 +7,8 @@
     border-top: 1px dotted var(--level_1-border-color);
     border-right: 1px dotted var(--level_1-border-color);
     height: 114px;
-    width: 42px;
-    right: -45px;
+    width: 21px;
+    right: -23px;
     bottom: -84px;
     border-top-right-radius: 10px;
 
@@ -58,6 +58,7 @@
     bottom: -21px;
 
 }
+
 /* LEVEL 4 */
 .level.infographic[data-level="4"][data-id="universe"] {
     top: -89px;
@@ -72,7 +73,6 @@
     left: -433px;
     top: 25px;
     border-top-left-radius: 10px;
-
 }
 
 .level.infographic[data-level="4"][data-id="lot-tables"] {
@@ -101,7 +101,6 @@
     height: 23px;
     left: 27px;
     top: -25px;
-
 }
 
 .level.infographic[data-level="5"][data-id="no"] {
@@ -114,22 +113,115 @@
     height: 23px;
     left: 27px;
     top: -25px;
+}
 
+/* LEVEL 6 */
+.level.infographic[data-level="6"][data-id="lgothic"] {
+    bottom: -90px;
+    right: -98px;
+    min-width: 142px;
+}
+
+.level.infographic[data-level="6"][data-id="lgothic"]:before{
+    border-left: 1px dotted var(--level_6-border-color);
+    height: 23px;
+    left: 27px;
+    top: -25px;
+}
+
+/* LEVEL 6 */
+.level.infographic[data-level="6"][data-id="wterminator"] {
+    bottom: -25px;
+    right: -239px;
+    min-width: 198px;
+}
+
+.level.infographic[data-level="6"][data-id="wterminator"]:before{
+    border-top: 1px dotted var(--level_6-border-color);
+    width: 26px;
+    left: -26px;
+    top: 43px;
+}
+
+/* LEVEL 7 */
+.level.infographic[data-level="7"][data-id="yes"] {
+    bottom: -77px;
+    left: 18px;
+}
+
+.level.infographic[data-level="7"][data-id="yes"]:before{
+    border-left: 1px dotted var(--level_7-border-color);
+    height: 15px;
+    left: 24px;
+    top: -15px;
+}
+
+.level.infographic[data-level="7"][data-id="no"] {
+    bottom: -77px;
+    right: 18px;
+}
+
+.level.infographic[data-level="7"][data-id="no"]:before{
+    border-left: 1px dotted var(--level_7-border-color);
+    height: 15px;
+    left: 24px;
+    top: -15px;
+}
+
+/* LEVEL 8 */
+.level.infographic[data-level="8"][data-id="ocr"] {
+    bottom: -80px;
+    left: -17px;
+}
+
+.level.infographic[data-level="8"][data-id="ocr"]:before{
+    border-left: 1px dotted var(--level_8-border-color);
+    height: 15px;
+    left: 29px;
+    top: -15px;
+}
+
+.level.infographic[data-level="8"][data-id="looking_hot"] {
+    bottom: -42px;
+    right: -200px;
+    min-width: 153px;
+}
+
+.level.infographic[data-level="8"][data-id="looking_hot"]:before{
+    border-top: 1px dotted var(--level_8-border-color);
+    width: 29px;
+    left: -31px;
+    top: 27px;
+}
+
+/* LEVEL 9 */
+.level.infographic[data-level="9"] {
+    top: -138px;
+    right: 28px;
+}
+
+.level.infographic[data-level="9"]:after{
+    border-right: 1px dotted var(--level_9-border-color);
+    height: 25px;
+    right: 28px;
+    bottom: -25px;
+}
+
+/* LEVEL 10 */
+.level.infographic[data-level="10"] {
+    top: -105px;
+    right: -48px;
+    min-width: 118px;
+}
+
+.level.infographic[data-level="10"]:after{
+    border-right: 1px dotted var(--level_10-border-color);
+    height: 25px;
+    right: 59px;
+    bottom: -25px;
 }
 
 @media (max-width: 768px) {
-    .level.infographic[data-level="1"],
-    .level.infographic[data-level="2"],
-    .level.infographic[data-level="3"],
-    .level.infographic[data-level="4"],
-    .level.infographic[data-level="5"],
-    .level.infographic[data-level="6"],
-    .level.infographic[data-level="7"],
-    .level.infographic[data-level="8"] {
-        top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        bottom: auto !important;
-    }
+    
 }
 
