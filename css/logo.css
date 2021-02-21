@@ -1,0 +1,15 @@
+/* LEVEL 1 */
+.level.logo[data-level="1"] {
+    bottom: -59px;
+    right: 147px;
+}
+
+.level.logo[data-level="1"]::before {
+    border-bottom: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    height: 33px;
+    width: 21px;
+    left: -23px;
+    bottom: 20px;
+    border-bottom-left-radius: 10px;
+}

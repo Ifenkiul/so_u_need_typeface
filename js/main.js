@@ -11,16 +11,15 @@ buttonsClose.forEach(element => element.addEventListener('click', function(event
     });
 }));
 
-const btnGlobal = document.querySelector('.btn_global');
+const btnGlobal = document.querySelector('.level[data-level="0"] h2');
 btnGlobal.addEventListener('click', function() {
-    btnGlobal.classList.toggle('btn_global--open');
-    document.querySelectorAll('.level').forEach(element => {
+    document.querySelectorAll('.level[data-level="1"').forEach(element => {
         if (element.dataset.level !== "0") {
             element.classList.toggle('hidden');
         }
 
     });
-    document.querySelectorAll('.btn_close').forEach(element => {
+    document.querySelectorAll('.btn_close[data-level="1"').forEach(element => {
         element.classList.toggle('btn_close--open');
     });
 });

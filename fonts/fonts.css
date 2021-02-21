@@ -29,3 +29,14 @@
 .ff-ocr-std {
     font-family: 'OCR Std';
 }
+
+@font-face {
+    font-family: 'Din';
+    src: url('D-DIN.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.ff-din {
+    font-family: 'Din';
+}

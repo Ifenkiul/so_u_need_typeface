@@ -4,8 +4,8 @@
 }
 
 .level.infographic[data-level="1"]:after {
-    border-top: 1px dotted var(--level_1-border-color);
-    border-right: 1px dotted var(--level_1-border-color);
+    border-top: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_1-border-color);
     height: 114px;
     width: 21px;
     right: -23px;
@@ -22,8 +22,8 @@
 }
 
 .level.infographic[data-level="2"]:after {
-    border-top: 1px dotted var(--level_2-border-color);
-    border-right: 1px dotted var(--level_2-border-color);
+    border-top: 1px var(--var-tree-branch-style) var(--level_2-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_2-border-color);
     height: 17px;
     right: 95px;
     bottom: -19px;
@@ -37,8 +37,8 @@
 }
 
 .level.infographic[data-level="3"][data-id="yes"]:after {
-    border-top: 1px dotted var(--level_3-border-color);
-    border-right: 1px dotted var(--level_3-border-color);
+    border-top: 1px var(--var-tree-branch-style) var(--level_3-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_3-border-color);
     height: 19px;
     right: 26px;
     bottom: -21px;
@@ -51,8 +51,8 @@
 }
 
 .level.infographic[data-level="3"][data-id="no"]:after {
-    border-top: 1px dotted var(--level_3-border-color);
-    border-right: 1px dotted var(--level_3-border-color);
+    border-top: 1px var(--var-tree-branch-style) var(--level_3-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_3-border-color);
     height: 20px;
     right: 26px;
     bottom: -21px;
@@ -66,8 +66,8 @@
 }
 
 .level.infographic[data-level="4"][data-id="universe"]:before{
-    border-top: 1px dotted var(--level_4-border-color);
-    border-left: 1px dotted var(--level_4-border-color);
+    border-top: 1px var(--var-tree-branch-style) var(--level_4-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_4-border-color);
     height: 27px;
     width: 432px;
     left: -433px;
@@ -82,8 +82,8 @@
 }
 
 .level.infographic[data-level="4"][data-id="lot-tables"]:before{
-    border-top: 1px dotted var(--level_4-border-color);
-    border-left: 1px dotted var(--level_4-border-color);
+    border-top: 1px var(--var-tree-branch-style) var(--level_4-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_4-border-color);
     width: 25px;
     left: -27px;
     top: 26px;
@@ -97,7 +97,7 @@
 }
 
 .level.infographic[data-level="5"][data-id="yes"]:before{
-    border-left: 1px dotted var(--level_5-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_5-border-color);
     height: 23px;
     left: 27px;
     top: -25px;
@@ -109,7 +109,7 @@
 }
 
 .level.infographic[data-level="5"][data-id="no"]:before{
-    border-left: 1px dotted var(--level_5-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_5-border-color);
     height: 23px;
     left: 27px;
     top: -25px;
@@ -123,7 +123,7 @@
 }
 
 .level.infographic[data-level="6"][data-id="lgothic"]:before{
-    border-left: 1px dotted var(--level_6-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_6-border-color);
     height: 23px;
     left: 27px;
     top: -25px;
@@ -137,7 +137,7 @@
 }
 
 .level.infographic[data-level="6"][data-id="wterminator"]:before{
-    border-top: 1px dotted var(--level_6-border-color);
+    border-top: 1px var(--var-tree-branch-style) var(--level_6-border-color);
     width: 26px;
     left: -26px;
     top: 43px;
@@ -150,7 +150,7 @@
 }
 
 .level.infographic[data-level="7"][data-id="yes"]:before{
-    border-left: 1px dotted var(--level_7-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_7-border-color);
     height: 15px;
     left: 24px;
     top: -15px;
@@ -162,7 +162,7 @@
 }
 
 .level.infographic[data-level="7"][data-id="no"]:before{
-    border-left: 1px dotted var(--level_7-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_7-border-color);
     height: 15px;
     left: 24px;
     top: -15px;
@@ -175,7 +175,7 @@
 }
 
 .level.infographic[data-level="8"][data-id="ocr"]:before{
-    border-left: 1px dotted var(--level_8-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_8-border-color);
     height: 15px;
     left: 29px;
     top: -15px;
@@ -188,7 +188,7 @@
 }
 
 .level.infographic[data-level="8"][data-id="looking_hot"]:before{
-    border-top: 1px dotted var(--level_8-border-color);
+    border-top: 1px var(--var-tree-branch-style) var(--level_8-border-color);
     width: 29px;
     left: -31px;
     top: 27px;
@@ -201,7 +201,7 @@
 }
 
 .level.infographic[data-level="9"]:after{
-    border-right: 1px dotted var(--level_9-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_9-border-color);
     height: 25px;
     right: 28px;
     bottom: -25px;
@@ -215,7 +215,7 @@
 }
 
 .level.infographic[data-level="10"]:after{
-    border-right: 1px dotted var(--level_10-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_10-border-color);
     height: 25px;
     right: 59px;
     bottom: -25px;

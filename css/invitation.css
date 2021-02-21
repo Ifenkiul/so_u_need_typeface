@@ -1,0 +1,15 @@
+/* LEVEL 1 */
+.level.invitation[data-level="1"] {
+    bottom: -59px;
+    left: 82px;
+}
+
+.level.invitation[data-level="1"]::before {
+    border-bottom: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    height: 33px;
+    width: 21px;
+    right: -23px;
+    bottom: 19px;
+    border-bottom-right-radius: 10px;
+}

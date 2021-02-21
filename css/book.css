@@ -1,0 +1,29 @@
+/* LEVEL 1 */
+.level.book[data-level="1"] {
+    top: -74px;
+    left: 49px;
+}
+
+.level.book[data-level="1"]::before {
+    border-top: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    height: 46px;
+    width: 67px;
+    right: -70px;
+    bottom: -23px;
+    border-top-right-radius: 10px;
+}
+
+/* LEVEL 2 */
+.level.book[data-level="2"] {
+    top: -45px;
+    left: -200px;
+}
+
+.level.book[data-level="2"]::after {
+    border-top: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    width: 52px;
+    right: -54px;
+    bottom: 42px;
+}

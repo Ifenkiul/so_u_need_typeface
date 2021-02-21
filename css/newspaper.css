@@ -1,0 +1,15 @@
+/* LEVEL 1 */
+.level.newspaper[data-level="1"] {
+    top: -59px;
+    right: 82px;
+}
+
+.level.newspaper[data-level="1"]::before {
+    border-top: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    border-left: 1px var(--var-tree-branch-style) var(--level_1-border-color);
+    height: 33px;
+    width: 21px;
+    left: -23px;
+    bottom: -8px;
+    border-top-left-radius: 10px;
+}

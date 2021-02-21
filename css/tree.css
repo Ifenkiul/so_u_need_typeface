@@ -3,6 +3,10 @@
 @import '../fonts/fonts.css';
 
 @import 'infographic.css';
+@import "newspaper.css";
+@import 'logo.css';
+@import 'invitation.css';
+@import 'book.css';
 
 body {
     background-color: black;
@@ -20,6 +24,7 @@ main {
 /* LEVELS START*/
 .level a:hover {
     color: yellow;
+    text-shadow: 3px 3px 5px white;
 }
 
 .level a:active {
@@ -38,7 +43,7 @@ main {
 }
 
 .level[data-level="0"] {
-    cursor: pointer;
+    
     padding: 20px;
     width: 526px;
     margin: 0 auto;
@@ -57,6 +62,18 @@ main {
 
 .level > .container {
     position: relative;
+}
+
+.level[data-level="0"]:hover {
+    color: yellow;
+    border-color: yellow;
+    text-shadow: 3px 3px 10px green;
+}
+
+.level[data-level="0"] h2:hover {
+    cursor: pointer;
+    color: yellowgreen;
+    text-shadow: 3px 3px 10px green;
 }
 
 .level[data-level^="1"] {
@@ -101,22 +118,8 @@ main {
 /* LEVELS END */
 
 /* CLOSE BUTTON START*/
-.btn_global {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 1px solid white;
-}
-
-.btn_global:before {
-    content: "✕";
-}
-
-.btn_global--open::before {
-    content: "⇉";
-}
-
 .btn_close {
+    cursor: pointer;
     position:absolute;
     top: 0;
     right: 0;
@@ -135,7 +138,6 @@ main {
 .btn_close[data-level="1"] {
     border-left:1px solid var(--level_1-border-color);
     border-bottom: 1px solid var(--level_1-border-color);
-    
 }
 
 .btn_close[data-level="2"] {
@@ -189,7 +191,7 @@ main {
     main {
         height: auto;
     }
-    
+
     .level {
         width: 100%;
         position: relative;
