@@ -11,28 +11,60 @@ buttonsClose.forEach(element => element.addEventListener('click', function(event
     });
 }));
 
+// ------------------------- GLOBAL BUTTON SHOW/HIDE ALL CLICK START
 const btnGlobal = document.querySelector('.level[data-level="0"] h2');
+let wasButtonClicked = false;
 btnGlobal.addEventListener('click', function() {
-    document.querySelectorAll('.level[data-level="1"').forEach(element => {
-        if (element.dataset.level !== "0") {
-            element.classList.toggle('hidden');
-        }
-
-    });
-    document.querySelectorAll('.btn_close[data-level="1"').forEach(element => {
-        element.classList.toggle('btn_close--open');
-    });
+    if(wasButtonClicked !==  true) {
+        document.querySelectorAll('.level').forEach(element => {
+            if (element.dataset.level !== "0") {
+                element.classList.remove('hidden');
+            }
+        });
+        document.querySelectorAll('.btn_close').forEach(element => {
+            element.classList.remove('btn_close--open');
+        });
+        wasButtonClicked = true;
+    } else {
+        document.querySelectorAll('.level').forEach(element => {
+            if (element.dataset.level !== "0") {
+                element.classList.add('hidden');
+            }
+        });
+        wasButtonClicked = false;
+    }
 });
 
-// -------------------------------- SHOW ALL BUTTON START
-const btnShowAll = document.querySelector('.btn_show_all');
-btnShowAll.addEventListener('click', function() {
-    document.querySelectorAll('.level').forEach(element => {
+// --------- SHOW N LEVEL FUNCTION
+function showNLevel(levelToShow) {
+    const levelsArray = document.querySelectorAll('.level');
+    const btnCloseArray = document.querySelectorAll('.btn_close');
+    levelsArray.forEach(element => {
         if (element.dataset.level !== "0") {
+            element.classList.add('hidden');
+        }
+    });
+    btnCloseArray.forEach(element => {
+        element.classList.remove('btn_close--open');
+    });
+
+    levelsArray.forEach( element => {
+        const elementLevel = parseInt(element.dataset.level);
+        if(elementLevel <= parseInt(levelToShow) && elementLevel !== 0)  {
             element.classList.remove('hidden');
         }
     });
-    document.querySelectorAll('.btn_close').forEach(element => {
-        element.classList.remove('btn_close--open');
+    btnCloseArray.forEach(element => {
+        const elementLevel = parseInt(element.dataset.level);
+        if(elementLevel === parseInt(levelToShow) && elementLevel !== 0)  {
+            element.classList.add('btn_close--open');
+        }
     });
-});
+
+}
+
+// -------------------------------- SHOW N LEVEL
+document.querySelectorAll('.btn_show_level').forEach(element => element.addEventListener('click', function(event) {
+    console.log(parseInt(event.currentTarget.dataset.level));
+    showNLevel(parseInt(event.currentTarget.dataset.level));
+}));
