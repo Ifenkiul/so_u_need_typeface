@@ -40,3 +40,14 @@
 .ff-din {
     font-family: 'Din';
 }
+
+@font-face {
+    font-family: 'Times';
+    src: url('timr45w.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.ff-times {
+    font-family: 'Times';
+}

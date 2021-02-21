@@ -21,9 +21,9 @@
 }
 
 .level.book[data-level="2"]::after {
-    border-top: 1px var(--var-tree-branch-style) var(--level_1-border-color);
-    border-right: 1px var(--var-tree-branch-style) var(--level_1-border-color);
-    width: 52px;
-    right: -54px;
+    border-top: 1px var(--var-tree-branch-style) var(--level_2-border-color);
+    border-right: 1px var(--var-tree-branch-style) var(--level_2-border-color);
+    width: 59px;
+    right: -62px;
     bottom: 42px;
 }

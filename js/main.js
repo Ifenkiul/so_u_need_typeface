@@ -23,3 +23,16 @@ btnGlobal.addEventListener('click', function() {
         element.classList.toggle('btn_close--open');
     });
 });
+
+// -------------------------------- SHOW ALL BUTTON START
+const btnShowAll = document.querySelector('.btn_show_all');
+btnShowAll.addEventListener('click', function() {
+    document.querySelectorAll('.level').forEach(element => {
+        if (element.dataset.level !== "0") {
+            element.classList.remove('hidden');
+        }
+    });
+    document.querySelectorAll('.btn_close').forEach(element => {
+        element.classList.remove('btn_close--open');
+    });
+});
