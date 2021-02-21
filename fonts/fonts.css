@@ -51,3 +51,14 @@
 .ff-times {
     font-family: 'Times';
 }
+
+@font-face {
+    font-family: 'Miller';
+    src: url('Miller-Text.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.ff-miller {
+    font-family: 'Miller';
+}

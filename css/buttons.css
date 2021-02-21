@@ -1,0 +1,133 @@
+/* BUTTONs START*/
+.btn_container {
+    display: flex;
+    flex-direction: column;
+    align-self: end
+}
+.btn_show_level {
+    border: 2px dashed yellowgreen;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn_show_level:hover {
+    color:darkred;
+    box-shadow: 0 0 5px yellowgreen;
+    border: 2px solid darkred;
+    text-shadow: 1px 1px 3px yellowgreen;
+}
+
+.btn_show_level[data-level="1"] {
+    border-color: var(--level_1-border-color);;
+}
+
+.btn_show_level[data-level="2"] {
+    border-color: var(--level_2-border-color);;
+}
+
+.btn_show_level[data-level="3"] {
+    border-color: var(--level_3-border-color);;
+}
+
+.btn_show_level[data-level="4"] {
+    border-color: var(--level_4-border-color);;
+}
+
+.btn_show_level[data-level="5"] {
+    border-color: var(--level_5-border-color);;
+}
+
+.btn_show_level[data-level="6"] {
+    border-color: var(--level_6-border-color);;
+}
+
+.btn_show_level[data-level="7"] {
+    border-color: var(--level_7-border-color);;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .btn_container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn_show_level {
+        position: static;
+    };
+}
+
+.btn_close {
+    cursor: pointer;
+    position:absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    padding: 0 3px 0 3px;
+}
+
+.btn_close:before {
+    content: "✕";
+    font-size: 10px;
+}
+
+.btn_close--open:before {
+    content: '⇉';
+}
+
+.btn_close[data-level="1"] {
+    border-left:1px solid var(--level_1-border-color);
+    border-bottom: 1px solid var(--level_1-border-color);
+}
+
+.btn_close[data-level="2"] {
+    border-left: 1px solid var(--level_2-border-color);
+    border-bottom: 1px solid var(--level_2-border-color);
+}
+
+.btn_close[data-level="3"] {
+    border-left: 1px solid var(--level_3-border-color);
+    border-bottom: 1px solid var(--level_3-border-color);
+}
+
+.btn_close[data-level="4"] {
+    border-left: 1px solid var(--level_4-border-color);
+    border-bottom: 1px solid var(--level_4-border-color);
+}
+
+.btn_close[data-level="5"] {
+    border-left: 1px solid var(--level_5-border-color);
+    border-bottom: 1px solid var(--level_5-border-color);
+}
+
+.btn_close[data-level="6"] {
+    border-left: 1px solid var(--level_6-border-color);
+    border-bottom: 1px solid var(--level_6-border-color);
+}
+
+.btn_close[data-level="7"] {
+    border-left: 1px solid var(--level_7-border-color);
+    border-bottom: 1px solid var(--level_7-border-color);
+}
+
+.btn_close[data-level="8"] {
+    border-left: 1px solid var(--level_8-border-color);
+    border-bottom: 1px solid var(--level_8-border-color);
+}
+
+.btn_close[data-level="9"] {
+    border-left: 1px solid var(--level_9-border-color);
+    border-bottom: 1px solid var(--level_9-border-color);
+}
+
+.btn_close[data-level="10"] {
+    border-left: 1px solid var(--level_10-border-color);
+    border-bottom: 1px solid var(--level_10-border-color);
+}
+/* CLOSE BUTTON */
