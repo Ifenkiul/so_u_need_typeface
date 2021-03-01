@@ -30,8 +30,8 @@
 }
 
 .level.newspaper[data-level="2"][data-id="combination"] {
-    top: -7px;
-    right: -240px;
+    top: -31px;
+    right: -254px;
 }
 
 .level.newspaper[data-level="2"][data-id="combination"]::before {
@@ -43,8 +43,8 @@
 }
 
 .level.newspaper[data-level="2"][data-id="display"] {
-    top: 65px;
-    right: 2px
+    top: 34px;
+    right: 2px;
 }
 
 .level.newspaper[data-level="2"][data-id="display"]::before {

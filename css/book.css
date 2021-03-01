@@ -1,10 +1,10 @@
 /* LEVEL 1 */
-.level.book[data-level="1"] {
+.level[data-line="book"][data-level="1"] {
     top: -74px;
     left: 49px;
 }
 
-.level.book[data-level="1"]::before {
+.level[data-line="book"][data-level="1"]::before {
     border-top: 1px var(--var-tree-branch-style) var(--level_1-border-color);
     border-right: 1px var(--var-tree-branch-style) var(--level_1-border-color);
     height: 46px;
@@ -15,12 +15,12 @@
 }
 
 /* LEVEL 2 */
-.level.book[data-level="2"] {
+.level[data-line="book"][data-level="2"] {
     top: -45px;
     left: -200px;
 }
 
-.level.book[data-level="2"]::after {
+.level[data-line="book"][data-level="2"]::after {
     border-top: 1px var(--var-tree-branch-style) var(--level_2-border-color);
     border-right: 1px var(--var-tree-branch-style) var(--level_2-border-color);
     width: 59px;

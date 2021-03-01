@@ -74,13 +74,13 @@
 }
 
 .btn_close:before {
-    content: "✕";
-    font-size: 10px;
+    content: "🗘";
+    font-size: 12px;
 }
 
-.btn_close--open:before {
+/* .btn_close--open:before {
     content: '⇉';
-}
+} */
 
 .btn_close[data-level="1"] {
     border-left:1px solid var(--level_1-border-color);

@@ -1,10 +1,10 @@
 /* LEVEL 1 */
-.level.invitation[data-level="1"] {
+.level[data-line="invitation"][data-level="1"] {
     bottom: -59px;
     left: 82px;
 }
 
-.level.invitation[data-level="1"]::before {
+.level[data-line="invitation"][data-level="1"]::before {
     border-bottom: 1px var(--var-tree-branch-style) var(--level_1-border-color);
     border-right: 1px var(--var-tree-branch-style) var(--level_1-border-color);
     height: 33px;

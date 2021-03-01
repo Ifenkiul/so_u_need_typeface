@@ -1,14 +1,11 @@
 const buttonsClose = document.querySelectorAll('.btn_close');
 buttonsClose.forEach(element => element.addEventListener('click', function(event){
-    const currentButton = event.currentTarget;
-    const level = parseInt(currentButton.dataset.level);
-    const line = currentButton.dataset.line;
-    const index =  currentButton.dataset.index;
-
-    currentButton.classList.toggle('btn_close--open');
-    document.querySelectorAll(`.level.${line}[data-level="${level + 1}"][data-index="${index}"]`).forEach(element => {
-        element.classList.toggle('hidden');
-    });
+    const currentButton = event.target;
+    const nextElement =  currentButton.nextElementSibling;
+    if (nextElement.classList.contains('container')) {
+        nextElement.classList.toggle('hidden');
+    }
+    
 }));
 
 // ------------------------- GLOBAL BUTTON SHOW/HIDE ALL CLICK START
@@ -21,9 +18,7 @@ btnGlobal.addEventListener('click', function() {
                 element.classList.remove('hidden');
             }
         });
-        document.querySelectorAll('.btn_close').forEach(element => {
-            element.classList.remove('btn_close--open');
-        });
+       
         wasButtonClicked = true;
     } else {
         document.querySelectorAll('.level').forEach(element => {
@@ -44,9 +39,6 @@ function showNLevel(levelToShow) {
             element.classList.add('hidden');
         }
     });
-    btnCloseArray.forEach(element => {
-        element.classList.remove('btn_close--open');
-    });
 
     levelsArray.forEach( element => {
         const elementLevel = parseInt(element.dataset.level);
@@ -54,17 +46,10 @@ function showNLevel(levelToShow) {
             element.classList.remove('hidden');
         }
     });
-    btnCloseArray.forEach(element => {
-        const elementLevel = parseInt(element.dataset.level);
-        if(elementLevel === parseInt(levelToShow) && elementLevel !== 0)  {
-            element.classList.add('btn_close--open');
-        }
-    });
 
 }
 
 // -------------------------------- SHOW N LEVEL
 document.querySelectorAll('.btn_show_level').forEach(element => element.addEventListener('click', function(event) {
-    console.log(parseInt(event.currentTarget.dataset.level));
     showNLevel(parseInt(event.currentTarget.dataset.level));
 }));

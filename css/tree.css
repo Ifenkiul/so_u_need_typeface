@@ -64,9 +64,9 @@ main {
 }
 
 .level[data-level="0"]:hover {
-    color: yellow;
+    /* color: yellow;
     border-color: yellow;
-    text-shadow: 3px 3px 10px green;
+    text-shadow: 3px 3px 10px green; */
 }
 
 .level[data-level="0"] h2:hover {
