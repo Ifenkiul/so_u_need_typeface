@@ -6,6 +6,11 @@
     text-transform: uppercase;
 }
 
+.not_link {
+    text-decoration: none;
+    cursor: auto;
+}
+
 /* FONT */
 .fz-30 {
     font-size: 30px;

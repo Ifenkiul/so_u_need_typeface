@@ -1,43 +1,22 @@
+// hide child containers
 const buttonsClose = document.querySelectorAll('.btn_close');
 buttonsClose.forEach(element => element.addEventListener('click', function(event){
     const currentButton = event.target;
-    const nextElement =  currentButton.nextElementSibling;
-    if (nextElement.classList.contains('container')) {
-        nextElement.classList.toggle('hidden');
+    const parentsChildren = currentButton.parentElement.children;
+    if(parentsChildren) {
+        for (element of parentsChildren) {
+            if (element.classList.contains('container')) {
+                element.classList.toggle('hidden');
+            }
+        }
     }
-    
 }));
-
-// ------------------------- GLOBAL BUTTON SHOW/HIDE ALL CLICK START
-const btnGlobal = document.querySelector('.level[data-level="0"] h2');
-let wasButtonClicked = false;
-btnGlobal.addEventListener('click', function() {
-    if(wasButtonClicked !==  true) {
-        document.querySelectorAll('.level').forEach(element => {
-            if (element.dataset.level !== "0") {
-                element.classList.remove('hidden');
-            }
-        });
-       
-        wasButtonClicked = true;
-    } else {
-        document.querySelectorAll('.level').forEach(element => {
-            if (element.dataset.level !== "0") {
-                element.classList.add('hidden');
-            }
-        });
-        wasButtonClicked = false;
-    }
-});
 
 // --------- SHOW N LEVEL FUNCTION
 function showNLevel(levelToShow) {
-    const levelsArray = document.querySelectorAll('.level');
-    const btnCloseArray = document.querySelectorAll('.btn_close');
+    const levelsArray = document.querySelectorAll(`.container`);
     levelsArray.forEach(element => {
-        if (element.dataset.level !== "0") {
-            element.classList.add('hidden');
-        }
+        element.classList.add('hidden');
     });
 
     levelsArray.forEach( element => {

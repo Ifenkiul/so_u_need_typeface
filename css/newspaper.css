@@ -1,7 +1,7 @@
 /* LEVEL 1 */
 .level.newspaper[data-level="1"] {
-    top: -59px;
-    right: -309px;
+    top: -300px;
+    right: -358px;
 }
 
 .level.newspaper[data-level="1"]::before {
@@ -70,6 +70,18 @@
     bottom: -24px;
 }
 
+.level.newspaper[data-level="3"][data-id="traditional"] {
+    top: 43px;
+    right: -41px;
+}
+
+.level.newspaper[data-level="3"][data-id="traditional"]::before {
+    border-left: 1px var(--var-tree-branch-style) var(--level_3-border-color);
+    height: 26px;
+    left: 61px;
+    bottom: 80px;
+}
+
 /* LEVEL 4 */
 .level.newspaper[data-level="4"][data-id="boring_yes"] {
     top: -141px;
@@ -95,6 +107,30 @@
     height: 26px;
     left: 28px;
     bottom: -29px;
+}
+
+.level[data-level="4"][data-line="newspaper"][data-id="traditional_yes"] {
+    bottom: -98px;
+    right: 59px;
+}
+
+.level[data-level="4"][data-line="newspaper"][data-id="traditional_yes"]::before {
+    border-left: 1px var(--var-tree-branch-style) var(--level_4-border-color);
+    height: 32px;
+    left: 28px;
+    bottom: 48px;
+}
+
+.level[data-level="4"][data-line="newspaper"][data-id="traditional_no"] {
+    bottom: -98px;
+    right: -16px;
+}
+
+.level[data-level="4"][data-line="newspaper"][data-id="traditional_no"]::before {
+    border-left: 1px var(--var-tree-branch-style) var(--level_4-border-color);
+    height: 32px;
+    left: 28px;
+    bottom: 48px;
 }
 
 /* LEVEL 5 */
@@ -124,6 +160,19 @@
     height: 15px;
     left: 16px;
     bottom: -17px;
+}
+
+.level[data-line="newspaper"][data-level="5"][data-id="highways"] {
+    top: 46px;
+    left: -159px;
+    min-width: 174px;
+}
+
+.level[data-line="newspaper"][data-level="5"][data-id="highways"]::after {
+    border-left: 1px var(--var-tree-branch-style) var(--level_5-border-color);
+    height: 28px;
+    right: 14px;
+    top: -30px;
 }
 
 /* LEVEL 6 */
