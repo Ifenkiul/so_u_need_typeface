@@ -53,3 +53,17 @@
     right: 22px;
     bottom: 48px;
 }
+
+/* LEVEL 3 */
+
+.level[data-line="book"][data-level="4"][data-id="caslon"] {
+    left: -57px;
+    bottom: -90px;
+}
+
+.level[data-line="book"][data-level="4"][data-id="caslon"]::before {
+    border-right: 1px var(--var-tree-branch-style) var(--level_4-border-color);
+    height: 25px;
+    right: 22px;
+    bottom: 48px;
+}
