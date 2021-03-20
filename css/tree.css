@@ -51,7 +51,7 @@ main {
 }
 
 .level {
-    width: fit-content;
+    width: auto;
     position: absolute;
     display: block;
     padding: 15px;
@@ -61,12 +61,6 @@ main {
 
 .level > .container {
     position: relative;
-}
-
-.level[data-level="0"]:hover {
-    /* color: yellow;
-    border-color: yellow;
-    text-shadow: 3px 3px 10px green; */
 }
 
 .level[data-level="0"] h2:hover {
@@ -124,7 +118,7 @@ main {
     }
 
     .level {
-        width: 100%;
+        width: 100% !important;
         position: relative;
         margin-bottom: 10px;
         top: auto;

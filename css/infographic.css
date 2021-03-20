@@ -78,7 +78,7 @@
 .level.infographic[data-level="4"][data-id="lot-tables"] {
     top: -37px;
     right: -209px;
-    min-width: 168px;
+    width: 168px;
 }
 
 .level.infographic[data-level="4"][data-id="lot-tables"]:before{
@@ -133,7 +133,7 @@
 .level.infographic[data-level="6"][data-id="wterminator"] {
     bottom: -25px;
     right: -239px;
-    min-width: 198px;
+    width: 198px;
 }
 
 .level.infographic[data-level="6"][data-id="wterminator"]:before{
@@ -184,7 +184,7 @@
 .level.infographic[data-level="8"][data-id="looking_hot"] {
     bottom: -42px;
     right: -200px;
-    min-width: 153px;
+    width: 153px;
 }
 
 .level.infographic[data-level="8"][data-id="looking_hot"]:before{

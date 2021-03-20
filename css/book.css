@@ -18,6 +18,7 @@
 .level[data-line="book"][data-level="2"] {
     top: -45px;
     left: -200px;
+    width: 122px;
 }
 
 .level[data-line="book"][data-level="2"]::after {
@@ -26,4 +27,29 @@
     width: 59px;
     right: -62px;
     bottom: 42px;
+}
+
+/* LEVEL 3 */
+.level[data-line="book"][data-level="3"][data-id="no"] {
+    right: -4px;
+    bottom: -90px;
+}
+
+.level[data-line="book"][data-level="3"][data-id="no"]::before {
+    border-right: 1px var(--var-tree-branch-style) var(--level_3-border-color);
+    height: 25px;
+    right: 22px;
+    bottom: 48px;
+}
+
+.level[data-line="book"][data-level="3"][data-id="yes"] {
+    left: -24px;
+    bottom: -90px;
+}
+
+.level[data-line="book"][data-level="3"][data-id="yes"]::before {
+    border-right: 1px var(--var-tree-branch-style) var(--level_3-border-color);
+    height: 25px;
+    right: 22px;
+    bottom: 48px;
 }

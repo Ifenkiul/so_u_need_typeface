@@ -152,7 +152,7 @@
 .level.newspaper[data-level="5"][data-id="heavily"] {
     top: -112px;
     right: -174px;
-    min-width: 202px;
+    width: 204px;
 }
 
 .level.newspaper[data-level="5"][data-id="heavily"]::before {
