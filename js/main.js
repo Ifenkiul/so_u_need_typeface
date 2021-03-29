@@ -1,3 +1,17 @@
+/* --------------------------------------- LEVEL INTRO ANIMATION */
+
+
+let i = 0;
+
+setInterval(showNLevel(i <= 15 ? i++ : 10), 1000);
+let timerId = setInterval(function() {
+    if ( i === 14) {
+      clearInterval(timerId);
+    }
+    showNLevel(i);
+    i++;
+  }, 400);
+
 // hide child containers
 const buttonsClose = document.querySelectorAll('.btn_close');
 buttonsClose.forEach(element => element.addEventListener('click', function(event){
@@ -32,3 +46,4 @@ function showNLevel(levelToShow) {
 document.querySelectorAll('.btn_show_level').forEach(element => element.addEventListener('click', function(event) {
     showNLevel(parseInt(event.currentTarget.dataset.level));
 }));
+
